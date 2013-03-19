@@ -575,9 +575,6 @@
 
   // Get emoji
   Emoji.get = function (name, options) {
-    
-    if (typeof options === "object" && typeof options.image !== "undefined")
-      return "https://a248.e.akamai.net/assets.github.com/images/icons/emoji/" + name + ".png";
 
     // If the different categories haven't been merged yet, merge them
     if (typeof this.emojis === "undefined") {
